@@ -5,7 +5,6 @@ cachetools==5.3.2
 certifi==2023.11.17
 charset-normalizer==3.3.2
 click==8.1.7
-command-not-found==0.3
 contourpy==1.2.0
 cryptography==3.4.8
 cycler==0.12.1
@@ -55,7 +54,6 @@ requests==2.31.0
 rich==13.7.0
 rpds-py==0.13.2
 seaborn==0.13.0
-SecretStorage==3.3.1
 six==1.16.0
 smmap==5.0.1
 streamlit==1.29.0
