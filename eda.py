@@ -69,7 +69,7 @@ for column in cat_and_nominal_columns:
     st.pyplot(fig)
 fig, ax = plt.subplots()
 sns.barplot(x = data['FAMILY_INCOME'].value_counts().index,
-y = data['FAMILY_INCOME'].value_counts().values, ax=ax, order = order = ['до 5000 руб.', 'от 5000 до 10000 руб.',  'от 10000 до 20000 руб.',
+y = data['FAMILY_INCOME'].value_counts().values, ax=ax, order = ['до 5000 руб.', 'от 5000 до 10000 руб.',  'от 10000 до 20000 руб.',
 'от 20000 до 50000 руб.', 'свыше 50000 руб.'])
 plt.xticks(rotation=50)
 st.pyplot(fig)
