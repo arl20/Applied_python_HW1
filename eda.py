@@ -54,15 +54,11 @@ for column in numeric_columns:
     ax.set_title(titles_dict[column])
     st.pyplot(fig)
 
-cat_and_nominal_columns = ['SOCSTATUS_WORK_FL', 'MARITAL_STATUS']
-cat_titles = ['Наличие работы', 'Семейное положение']
-cat_titles_dict = dict(zip(cat_and_nominal_columns, cat_titles))
-for column in cat_and_nominal_columns:
-    fig, ax = plt.subplots()
-    sns.barplot(x = data[column].value_counts().index, y = data[column].value_counts().values, ax=ax)
-    ax.set_title(cat_titles_dict[column])
-    plt.xticks(rotation=50)
-    st.pyplot(fig)
+fig, ax = plt.subplots()
+sns.barplot(x = data['SOCSTATUS_WORK_FL'].value_counts().index, y = data['SOCSTATUS_WORK_FL'].value_counts().values, ax=ax)
+ax.set_title('Наличие работы')
+plt.xticks(rotation=50)
+st.pyplot(fig)
 fig, ax = plt.subplots()
 sns.barplot(x = data['FAMILY_INCOME'].value_counts().index,
 y = data['FAMILY_INCOME'].value_counts().values, ax=ax, order = ['до 5000 руб.', 'от 5000 до 10000 руб.',  'от 10000 до 20000 руб.',
