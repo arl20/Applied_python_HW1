@@ -28,10 +28,6 @@ data = data[['AGREEMENT_RK', 'TARGET', 'AGE', 'SOCSTATUS_WORK_FL', 'SOCSTATUS_PE
              'GENDER', 'CHILD_TOTAL', 'DEPENDANTS', 'PERSONAL_INCOME',  'FAMILY_INCOME', 'LOAN_NUM_TOTAL',
              'LOAN_NUM_CLOSED', 'CREDIT', 'TERM', 'FST_PAYMENT']]
 
-data = data[['AGREEMENT_RK', 'TARGET', 'AGE', 'SOCSTATUS_WORK_FL', 'SOCSTATUS_PENS_FL',
-             'GENDER', 'MARITAL_STATUS', 'EDUCATION', 'CHILD_TOTAL', 'DEPENDANTS', 'PERSONAL_INCOME',  'FAMILY_INCOME',
-             'LOAN_NUM_CLOSED', 'CREDIT', 'TERM', 'FST_PAYMENT']]
-
 st.title("EDA")
 st.subheader("Описательные статистики")
 st.write(data.describe())
