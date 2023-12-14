@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
-path = 'https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/'
+path = 'https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients'
 
 d_clients = pd.read_csv(f'{path}/D_clients.csv')
 d_target = pd.read_csv(f'{path}/D_target.csv')
